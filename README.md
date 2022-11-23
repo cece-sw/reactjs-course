@@ -5,7 +5,7 @@ the link of the full course is [available](https://www.udemy.com/course/react-th
 
 The content of the course is divided in separated part wich are available directly underneath.
 
-1. [section_1 - Javascript Refresher]()
+1. [section_1 - Javascript Refresher](https://github.com/cece-sw/reactjs-course/blob/main/section_1/README.md)
 2. [section_2]()
 3. [section_3]()
 4. [section_4]()
