@@ -61,7 +61,8 @@ or
 import * as bundled from './utility.js'
 `
 
-##classes
+## classes
+
 ```
 class Person {
 	name = 'Max'
@@ -89,18 +90,13 @@ class Person extends Master{
 	}
 ```
 
-##classes, properties and methods
+## classes, properties and methods
 
 | properties 				| methods/functions |
 | ----------- 				| ----------- |
 | ES6										|
-| ----------- 				| ----------- 				|
-| ` constructor(){			|myMethod(){...}
-|	this.myProperty = 'value'	|
-|	}` 				|
-| ----------- 				| ----------- 				|
+| ` constructor(){this.myProperty = 'value'}`			|myMethod(){...}|
 | ES7										|
-| ----------- 				| ----------- 				|
 | myProperty = 'value'			| myMethod= () =>{}			| 
 
 
