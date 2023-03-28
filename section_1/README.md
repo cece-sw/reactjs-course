@@ -61,7 +61,7 @@ or
 import * as bundled from './utility.js'
 `
 
-## classes
+## classes old way
 
 ```
 class Person {
@@ -89,6 +89,24 @@ class Person extends Master{
 	this.name = 'Max'	
 	}
 ```
+## classes with ES6
+```
+class Human {
+	gender = 'male'
+	printGender = () => {
+		console.log(this.gender)
+	}
+}
+
+
+class Person extends Human{
+	name='max'	
+	gender='female'	
+	printMyName = () =>{
+		console.log(this.name)
+		}
+	}
+```
 
 ## classes, properties and methods
 
@@ -99,7 +117,66 @@ class Person extends Master{
 | ES7										|
 | myProperty = 'value'			| myMethod= () =>{}			| 
 
+# Spread & Rest Operator
+## spread
+"..." --> Spread --> used to split up array elements OR objecti properties\
+```
+	const newArray = [...oldArray,1,2]
+	const newObject = {...oldObject, newProp:5
+	}
+```
+## rest
+"..."	--> used to merge a list of function arguments into an array\
+```
+	function sortArgs(...args){
+		return args.sort()
+	}
+```
+# destructuring
 
+## Array destructuring
+```
+[a, ,b] = ['Hello','ara','Max']
+console.log(a) \\Hello
+console.log(b) \\Max
+```
+## Object destructuring
 
+```
+{name} = {name:'Hello',age:28}
+console.log(name) \\Max
+console.log(age) \\undefined
+```
 
+Objects and array are reference types and not primitive types
+object is stored in memory and the pointer is copied when we re assigned the value and point to the same object.
+same occurs for arrays.
 
+code to really copying the object
+```
+const person = {
+	name:'Max'
+}
+const secondPerson ={
+	...person
+}
+person.name = 'Manu'
+```
+
+function callMe(name) { 
+    console.log(name);
+}
+to
+const callMe = function(name) { 
+    console.log(name);
+}
+to
+const callMe = (name) => { 
+    console.log(name);
+}
+with only one argument
+const callMe = name => { 
+    console.log(name);
+}
+to simply return a value
+const returnMe = name => name
